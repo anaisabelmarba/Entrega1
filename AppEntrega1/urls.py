@@ -25,6 +25,8 @@ path("Inicio/", Inicio, name="Inicio"),
 path("Peliculas/", Peliculas, name="Peliculas"),
 path("Series/", Series, name="Series"),
 path("Comentarios", Comentarios, name="Comentarios"),
+path("comentariosFormularios", name="comentariosFormularios")
+
 
     
 ]

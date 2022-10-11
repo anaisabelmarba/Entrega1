@@ -12,4 +12,7 @@ def Series(request):
     return render(request, "EntregaCoder/Series.html")
 def Comentarios(request):
     return render(request, "EntregaCoder/Comentarios.html")
+def comentariosFormularios(request):
+    return render(request, "EntregaCoder/comentariosFormularios.html")
+
 
