@@ -2,7 +2,7 @@
 from django.shortcuts import render
 # Create your views here.
 
-def inicio(request):
+def Inicio(request):
     return render(request, "EntregaCoder/Inicio.html")
 def Generos (request):
     return render(request, "EntregaCoder/Generos.html")

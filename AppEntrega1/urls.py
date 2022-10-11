@@ -16,11 +16,11 @@ Including another URLconf
 
 from django.urls import path
 
-from AppEntrega1.views import Generos, inicio, Peliculas, Series
+from AppEntrega1.views import Generos, Inicio, Peliculas, Series
 
 
 urlpatterns = [ path("Genero/", Generos),
-path("Inicio/", inicio),
+path("Inicio/", Inicio),
 path("Peliculas/", Peliculas),
 path("Series/", Series),
 
