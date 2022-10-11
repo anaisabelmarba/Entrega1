@@ -20,11 +20,11 @@ from AppEntrega1.views import Generos, Inicio, Peliculas, Series, Comentarios
 
 
 
-urlpatterns = [ path("Genero/", Generos),
-path("Inicio/", Inicio),
-path("Peliculas/", Peliculas),
-path("Series/", Series),
-path("Comentarios", Comentarios)
+urlpatterns = [ path("Genero/", Generos, name="Generos"),
+path("Inicio/", Inicio, name="Inicio"),
+path("Peliculas/", Peliculas, name="Peliculas"),
+path("Series/", Series, name="Series"),
+path("Comentarios", Comentarios, name="Comentarios"),
 
     
 ]
