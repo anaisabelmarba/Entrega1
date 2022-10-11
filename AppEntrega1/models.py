@@ -16,3 +16,7 @@ class Series_Accion (models.Model):
     
 class Generos (models.Model):
     pass
+
+
+class Comentarios (models.Model):
+    pass
