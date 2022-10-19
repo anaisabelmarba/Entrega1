@@ -4,8 +4,37 @@
 
 
 {% block contenidomodificable %}
+<html>
+<body>
 
-    <!--Aca va lo que se modifica-->
-    
+
+<p> Estas buscando : <strong> {{query}} </strong>
+
+{% if peliculas%}
+
+
+    <p> pelicula encontrada: {{peliculas|length}} peliculas </p>
+</p>
+
+
+        {% for pelicula in peliculas %}
+        <li>
+            {{pelicula.nombre}}
+
+
+        </li>
+    {% endfor %}
+
+{% else %}
+
+        <p> pelicula no encontrado</p>
+
+{% endif %}
+</body>
+
+
+</html>
+
+
 
 {% endblock %}

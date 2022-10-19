@@ -16,16 +16,18 @@ Including another URLconf
 
 from django.urls import path
 
-from AppEntrega1.views import Generos, Inicio, Peliculas, Series, Comentarios
+from AppEntrega1.views import  Inicio, Peliculas, Añadir, busqueda_peliculas, Pelicula_Buscada
 
 
 
-urlpatterns = [ path("Genero/", Generos, name="Generos"),
+
+urlpatterns = [
 path("Inicio/", Inicio, name="Inicio"),
 path("Peliculas/", Peliculas, name="Peliculas"),
-path("Series/", Series, name="Series"),
-path("Comentarios", Comentarios, name="Comentarios"),
-path("comentariosFormularios", name="comentariosFormularios")
+path("Añadir/", Añadir, name="Añadir"),
+path("Busqueda_Pelis/",busqueda_peliculas),
+path("Pelicula_Buscada", Pelicula_Buscada),
+
 
 
     
