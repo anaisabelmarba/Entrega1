@@ -24,6 +24,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'Añadir' %}">Añadir</a>
           </li>
+          <!--Esta es la barra de busqueda -->
           <form action="/EntregaCoder/Peliculas/" method="POST"> {% csrf_token %}
 
             <input type="text" name="pelis">
